@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="controller.js" type="text/javascript"></script>
+        <title>Hallo</title>
+        <style type="text/css">
+            .error{color:red;} .ok{color:green;}
+        </style>
+    </head>
+    <body>
+        
+        <form name="newUser" onsubmit="return checkForm()">
+            Name: 
+            <input name="inputName" type="text"/><span></span>
+            Birthdate: 
+            <input name="inputBirthdate" type="date" /><span></span>
+            <input type="submit" />
+            <textarea name="textarea"></textarea>
+        </form>
+        
+        <div id="myModal" class="modal fade" tabindex="-1"
+             role="dialog" aria-labelledby="titolModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-label="Close"> <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 id="titolModal" class="modal-title">ERRORES ENCONTRADOS EN EL FORMULARIO!</h4>
+                    </div>
+                    <div class="modal-body" id="contingutModal">
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    </body>
+</html>
